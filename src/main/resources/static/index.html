@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo App - MDS - Tema 01 | Home</title>
+</head>
+
+<style>
+    body {
+        background-color: lightgoldenrodyellow;
+    }
+    #title {
+        text-align: center;
+    }
+    a {
+        text-decoration: none;
+        color: darkred;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: coral;
+    }
+
+    a:visited{
+        color: darkred;
+    }
+
+    ul {
+        list-style-type: circle;
+    }
+
+</style>
+<body>
+    <h1 id="title">Bază de date Bibliotecă - Pagina Principală</h1>
+
+    <a href="http://localhost:8080/h2-console">Pagină Admin - H2 Console</a> <br>
+
+    <h3>Selectează opțiunea:</h3>
+    <ul>
+        <li><a href="http://localhost:8080/api/v1/Author/authors">Lista autorilor</a></li>
+        <li><a href="http://localhost:8080/api/v1/Book/books">Lista cărților</a></li>
+        <li><a href="http://localhost:8080/api/v1/Publisher/publishers">Lista editurilor</a></li>
+    </ul>
+
+</body>
+</html>

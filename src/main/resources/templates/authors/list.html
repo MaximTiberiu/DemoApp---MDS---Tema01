@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo App - MDS - Tema 01 | Authors</title>
+</head>
+
+<style>
+  body {
+    background-color: lightgoldenrodyellow;
+  }
+
+  #title {
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: darkred;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: coral;
+  }
+
+  a:visited{
+    color: darkred;
+  }
+
+  table, th, td {
+    border: 2px solid darkblue;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+</style>
+
+<body>
+
+<h1 id="title">Bază de date Bibliotecă - Lista Autorilor</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Prenume</th>
+    <th>Nume</th>
+  </tr>
+  <tr th:each="author : ${authors}">
+    <td th:text="${author.id}"></td>
+    <td th:text="${author.firstName}"></td>
+    <td th:text="${author.lastName}"></td>
+  </tr>
+</table>
+
+
+<br>
+<a href="http://localhost:8080/">Înapoi la Pagina Principală</a>
+
+</body>
+</html>
